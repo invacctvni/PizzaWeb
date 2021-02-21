@@ -1,0 +1,240 @@
+body{
+	margin: 0px;
+}
+
+h1,h2,h3,h4,h5{
+	font-family: 'roboto', sans-serif;
+	font-size: 18px;
+	text-decoration: none;
+}
+
+p,a{
+	font-family:'Lato',sans-serif;
+	font-size:16px;
+	text-decoration:none;
+}
+
+/**1.Display flex to the header element as we need the logo and nav to be the flex items on the same row**/
+header{
+	display:flex;
+	height:100px;
+	align-items:center;
+	background-color: black;
+}
+
+header>article{
+	height:100%;
+	/**Applying the flex-grow argument we can dictate which element gets the most space**/
+	flex-grow: 1; 
+	color:rgb(255,215,0);
+}
+header >article >img{
+	height:100px;
+	width:auto;
+}
+/**next element that we will apply flex to is the unordered list that is nested inside the nav element**/
+header > nav > ul{
+	display:flex;
+	list-style:none;/*Remove default styles*/
+	color:rgb(255,215,0);
+	font-size:50px;
+	font-weight: bold;
+}
+
+header > nav > ul > li>a{
+	text-decoration: none;
+	color:orange;
+}
+
+/**adjust the location of the li content*/
+header > nav > ul > li {
+	padding:5px 20px;
+
+}
+
+/*Once set, the footer will be out or range so remove the following command: 
+main{
+  width:100%;
+  float:left;
+}
+*/
+
+/** so far we can see the strucutre coming together**/
+/** Next we will start with <main> and the elements nested within**/
+
+
+main > section:first-child{
+	height:95vh;
+	background-image: url('../img/img3.png');
+	/*Take the whole background*/
+	background-size: cover;
+	padding:0% 1% 0% 0%;
+	display:flex;
+	align-items:center;
+
+}
+
+/**Next will targent the div element inside the first section (masthead)**/
+main>section:first-child > div{
+	width: 100%;
+	background-color:rgba(0,0,0,0);
+	padding: 25px 0px 25px 0px; /** top right bottom left **/
+	
+}
+
+/*set color font of sections in main*/
+main>section:first-child>div>h1{
+	color:#fff;
+	font-size:50px;
+	text-align: center;
+
+}
+
+main>section:first-child>div>h2{
+	color:#fff;
+	font-size:48px;
+	text-align: center;
+}
+
+/*Create a new botton div*/
+/*Note: align-items and justify-content will help to center the position of items */
+main>section:first-child >div>ul{
+	display:flex;
+	list-style:none;
+	align-items: center;
+  	justify-content: center;
+}
+
+main>section:first-child >div>ul>li{
+	padding-right:30px;
+	
+
+
+}
+
+/*set button features, such as font, border, etc*/
+main>section:first-child>div>ul>li>button{
+	font-size:20px;
+	font-family: 'Roboto',sans-serif;
+	color:#fff; 
+	background-color: rgba(255,255,255,0);
+	border:solid 2px #fff;
+	padding:5px 10px;
+
+}
+
+/*Second section is the main element*/
+/*flex*/
+main > section:nth-child(2){
+	display:flex;
+	/*padding:1%;*/
+	margin:0px; 
+
+
+
+}
+main>section:nth-child(2)>article{
+	padding:0px 0px 0px 0px;
+	width: 50%;
+	background-color: rgb(236,231,231);
+	color:White;
+	font-weight: bold;
+	background-image: url('../img/pizza21.png');
+	background-size: cover;
+	text-align: center;
+
+
+
+}
+main>section:nth-child(2)>article>img{
+	width:100%;
+	height:100%;
+	background-color: rgb(236,231,231);
+
+}
+main>section:nth-child(3){
+	display:flex;
+	padding:0%;
+	background-color:  #990000;
+}
+main>section:nth-child(3)>div{
+	padding:5px;
+}
+
+main>section:nth-child(3)>div>h5{
+	/*display:flex;*/
+	padding:0% 0% 0% 25%;
+	color:orange;
+}
+
+main>section:nth-child(3)>div>p{
+	/*display:flex;*/
+	/*padding:0% 0% 0% 25%;*/
+	color:white;
+	font-weight: bold;
+}
+/**Applying footer adjustment**/
+footer{
+	display:flex;
+	height:100px;
+	align-items:center;
+	padding: 0% 1% 0% 0%;
+	background-color: black;
+}
+
+	footer>div{
+	height:100px;
+	/**Applying the flex-grow argument we can dictate which element gets the most space**/
+	flex-grow: 1; 
+	/*align-items:bottom;*/
+}
+	footer>div>img{
+	height:100px;
+	width:auto;
+
+}
+	footer>div>p{
+	 padding:25px 30px;
+	 text-decoration: none;
+	color:orange;
+	}
+	footer>nav>ul{
+		display:flex;
+	list-style:none;
+
+}
+
+	footer > nav > ul > li {
+	padding:5px 15px;
+
+}
+    footer > nav > ul > li>a{
+	text-decoration: none;
+	color:orange;
+	font-weight: bold;
+}
+
+/*Add border line*/ 
+/*main>section:nth-child(2)>form{
+	 border-top: solid 2px #000;
+}
+*/
+/*set form border*/
+main > section:nth-child(2) > article>form{
+  border-top: none 2px #000;
+}
+
+/*main >  section:nth-child(2) > article>form> label{
+  padding-top: 5px;
+  font-size: 300px;
+  font-family: sans-serif;
+}*/
+/*set form border solid*/
+main > section:nth-child(2) > article>form input,
+main > section:nth-child(2) > article> form textarea{
+  padding: 5px;
+  font-family: sans-serif;
+  border: solid 3px #000;
+}
+
+

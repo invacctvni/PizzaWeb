@@ -1,0 +1,175 @@
+<!doctype html> 
+<html lang="en-CA">
+	<!-- add head section-->
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<title>Pizza Kingdom</title>
+		<meta name=description content="Pizza Kingdom Official Website">
+		<meta name="robots" content="noindex, nofollow"> 
+		<!-- add our fonts --> 
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap" rel="stylesheet">
+	<!-- add our CSS-->
+	<link rel="stylesheet" href="./css/style.css"/>
+	</head>
+	<!-- add body section-->
+	<body>
+		<!-- add header section, and this header is a 2 column container that will retain the navigation and the logo-->
+		<header>
+			<!-- logo container -->
+			<article>
+				<img src="./img/logo.png" alt="our logo">
+			</article>
+			<nav>
+				<ul>
+					<li><a href="#">Menu</a></li>
+					<li><a href="#">Location</a></li>
+					<li><a href="#">Sign-in</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
+		<!-- add main section-->
+		<main>
+			<!--row one (masthead) -->
+			<section>
+				<div>
+					<!--Put h1,h2 heading as the starting point --> 
+					<h1>Featured Specials </h1> 
+					<h2>Limited Time Offer!</h2>
+					<ul>
+						<li>
+							<button>Menu</button>
+						</li>
+						<li>
+							<button>Order</button>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<!-- section 2 -->
+			<section>
+				<article><!--article-->
+				<!--build forms for number of pizzas, size, shape,toppings,etc.-->
+					<form action="#">
+						<h3>Order Now</h3>
+					<!--div1 pizza Size-->
+					<div>
+						<!-- Put the quantity form for Pizza Number-->
+						<label for="quantity">Pizza Number (between 1 and 100)</label> 
+						<input type="number" id="quantity" name="quantity" min="1" max="100">
+					</div>
+					<div>
+						<!--Put the radio input for Pizza Size so Customer can choose --> 
+						<p>Pizza Size</p>
+						<input type="radio" id="small" name="size" value="small">
+						<label>Small(6 Slices)</label>
+						<input type="radio" id="medium" name="size" value="medium">
+						<label>Medium(8 Slices)</label>
+						<input type="radio" id="large" name="size" value="large">
+						<label>Large(10 Slices)</label>
+						<input type="radio" id="XL" name="size" value="XL">
+						<label>X-Large(12 Slices)</label>
+					</div>
+					<div>
+						<!-- Put the Topping Checkbox here --> 
+						<p>Toppings</p>
+						<input type="checkbox" id="broccoli" name="topping1" value="broccoli">
+						<label>Broccoli</label>
+						<input type="checkbox" id="file_pepper" name="topping2" value="firepepper">
+						<label>Fire Rosted Peppers</label>
+						<input type="checkbox" id="Hot_peppers" name="topping3" value="hotBananaPepper">
+						<label>Hot Banana Peppers</label>
+						<input type="checkbox" id="Jalapeno_peppers" name="topping4" value="JalapenoPeppers">
+						<label>Jalapeno Peppers</label>
+						<input type="checkbox" id="Spinach" name="topping5" value="Spinach">
+						<label>Spinach</label>
+						<input type="checkbox" id="roma_tomato" name="topping6" value="Roma Tomatoes">
+						<label>Roma Tomatoes</label>
+					</div>
+					<div> 
+						<!-- Put the Pizza Type that customer can choose anyone of them --> 
+						   <p>Pizza Type(Dough/Sauce/Cheese)</p>
+            			  <select id="Dough_Sauce_Cheese_type" name="type">
+              		      <option value="Regular Dough">Regular Dough</option>
+              	          <option value="Regular Thin Crust">Regular Thin Crust</option>
+                          <option value="Regular Thick Crust">Regular Thick Crust</option>
+                          <option value="Whole Grain Crust">Whole Grain Crust</option>
+                          <option value="Whole Grain Thick">Whole Grain Thick</option>
+                         </select>
+					</div>
+					<div>
+						<!-- Input Customer's personal info such as name, email, notes -->
+						<h4> Your Contact Information </h4>
+						<!-- Customer Name --> 
+						  <p>Your name</p>
+						  <p><input type="text"></p>
+						  <!--here using the email type this type will only accept content that contain @ symbol-->
+						  <!-- Customer Email --> 
+						  <p>Your Email</p>
+						  <p><input placeholder="email" type="email"></p> 
+						  <!-- Customer Special Note -->
+						  <p>Special Instructions</p>
+						  <textarea placeholder="Type here about your instructions" cols="30"></textarea>
+					</div>
+					<div>
+						<!--Input Customer's phone number as the contact information --> 
+						<p>Phone Number</p>
+						<input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+					<!--next we will add our submit and reset button -->
+					 </div>
+					 <div>
+           			 <p><input type="submit" value="submit"></p>
+           			 <p><input type="reset"></p>
+					 </div>
+					<!--<h4>The QUALITY</h4>
+					<p> Quality is our NO.1 ingredient. That’s why our Pizza, Chicken Wings, and Grilled Chicken Topping are raised without antibiotics and fed an all vegetable-grain diet, with no animal by-products. Plus, our Bites are made with 100% chicken breast meat.</p>
+					<h4>The DOUGH</h4>
+					<p>The dough is where excellent pizza begins and ends. Passed down for over generations, our dough is made in a traditional way. Consisting of only 4 ingredients (imported flour, imported sea salt, fresh yeast, and water) Pizza Hub is defined by its simplicity, but is perfected in its technique and quality of ingredients. Our dough comes together using our Imported mixers designed to replicate kneading the dough by hand. Flavor is further developed during the over 24 hour fermentation, where the dough picks up it’s trademark airiness. Always stretched by hand, to ensure the air remains in the final crust. </p>
+					<h4>The SAUCE</h4>
+					<p>Sourced from the valleys near Mount Vesuvius, we use nothing but the finest San Marzano tomatoes. And our sauce is simple. Never cooked down. Never steeped with heavy amounts of seasoning.</p> -->
+					</form>
+				</article>
+				<article>
+					<img src="./img/img2.png" alt="image one">
+				</article>
+			</section>
+			<!--section 3-->
+			<!--row 3 - 4 columns, introce the brand and features to the customer about the pizza company, including food, pizza dough, sauce, nutrition and healthy--> 
+			<section>
+				<div>
+					<h5> About Our Food </h5>
+					<p>The secret to our food? It’s pretty simple. Source fresh, quality ingredients. Prepare dishes with care and passion. Serve them with a warm smile. In other words, we take pride in what we make and how we share it. Even though we’ve grown a lot over the years, our mission is still the same:  Always the best food, made especially for you.<p>
+				</div>
+				<div>
+					<h5> Pizza Dough </h5> 
+					<p>100% Canadian Wheat! The secret to our perfectly crispy-chewy crust? Keeping it simple. Our pizza dough is made with 100% Canadian wheat and spring water and crafted by hand for every single order.<p></div>
+				<div>
+					<h5> Home Style Sauce</h5>
+					<p>You can’t make great pizza without a great sauce. Our traditional home-style sauce is made with fresh ingredients:  extra virgin olive oil, sunflower oil, oregano, sea salt, black pepper, garlic and, of course, vine-ripened tomatoes, fresh packed within 6 hours of harvest.<p></div>
+				<div>
+					<h5> Nutrition & Healthy</h5>
+					<p>Our plant-based protein options have been made available through a strategic partnership with Yves Veggie Cuisine (plant-based pepperoni). Both brands are proven leaders in the plant-based protein space and offer a unique flavour in all their products.<p></div>
+			</section>
+		</main>
+		<!-- add footer section-->
+		<footer>
+			<div>
+				<img src="./img/logo.png" alt="our logo">
+			</div>
+			<div>
+				<p>Copyright © 2021 Pizza Kingdom- All Rights Reserved.</p>
+			</div>
+			<nav>
+				<!--add ordered list-->
+				<ul>
+				<li><a href="#">Menu</a></li>
+				<li><a href="#">Location</a></li>
+				<li><a href="#">Sign-in</a></li>
+				<li><a href="#">Contact</a></li>
+			    </ul>	
+			</nav>
+		</footer>
+	</body>
+	</html>
