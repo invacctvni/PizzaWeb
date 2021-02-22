@@ -59,7 +59,7 @@ main{
 }
 */
 
-/** so far we can see the strucutre coming together**/
+/** so far we can see the structure coming together**/
 /** Next we will start with <main> and the elements nested within**/
 
 
@@ -74,7 +74,7 @@ main > section:first-child{
 
 }
 
-/**Next will targent the div element inside the first section (masthead)**/
+/**Next will target the div element inside the first section (masthead)**/
 main>section:first-child > div{
 	width: 100%;
 	background-color:rgba(0,0,0,0);
@@ -96,7 +96,7 @@ main>section:first-child>div>h2{
 	text-align: center;
 }
 
-/*Create a new botton div*/
+/*Create a new button div*/
 /*Note: align-items and justify-content will help to center the position of items */
 main>section:first-child >div>ul{
 	display:flex;
@@ -155,7 +155,7 @@ main>section:nth-child(2)>article>img{
 main>section:nth-child(3){
 	display:flex;
 	padding:0%;
-	background-color:  #990000;
+	background-color: #990000;
 }
 main>section:nth-child(3)>div{
 	padding:5px;
